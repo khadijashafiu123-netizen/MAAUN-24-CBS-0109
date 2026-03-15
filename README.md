@@ -21,7 +21,7 @@ This project demonstrates:
 Step 1: Install Python
 
 Step 2: Install Flask
-pip install flask
+pip install flask 
 
 Step 3: Run the application
 python app.py
