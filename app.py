@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from models import Business, BusinessDirectory
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='assginment4')
 
 directory = BusinessDirectory()
 
