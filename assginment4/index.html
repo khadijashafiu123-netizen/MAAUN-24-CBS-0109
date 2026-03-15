@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Business Directory</title>
+</head>
+<body>
+
+<h1>Local Business Directory</h1>
+
+<a href="/add">Add New Business</a>
+
+<h2>All Businesses</h2>
+<ul>
+{% for business in businesses %}
+    <li>{{ business.name }} - {{ business.category }} - {{ business.date_added }}</li>
+{% else %}
+    <li>No businesses yet.</li>
+{% endfor %}
+</ul>
+
+<h2>Recently Added</h2>
+<ul>
+{% for r in recent %}
+    <li>{{ r.name }}</li>
+{% else %}
+    <li>None</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
